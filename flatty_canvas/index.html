@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>flappy Box!</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+
+        }
+
+        .container {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #can {
+            display: block;
+            padding: 0;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+
+        @media(max-width:1200px) {
+            .container {
+                margin: 0 50px;
+            }
+            #can {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="can" width="800" height="600"></canvas>
+    </div>
+
+    <p>
+        <button id="start_game">
+            START
+        </button>
+        <button id="stop_game">
+            PAUSE
+        </button>
+        <button id="restart_game">
+            RESTART
+        </button>
+    </p>
+    <p>
+        Score:
+        <span id="score">0</span>
+    </p>
+    <p>
+        Hint:
+        <span>press <strong>[spacebar]</strong> to manuever the box and imagine it's a bird :)</span>
+    </p>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
